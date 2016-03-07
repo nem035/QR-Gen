@@ -18,3 +18,13 @@ QR-gen is a simple command line utility that creates QR-encoded PNG images.
 - Create an image from a file (pass a `-f` flag at any point)
   
   `qr-gen <filePath> <pathToQRimage> -f`
+
+## Example
+
+Using the [test.txt](https://raw.githubusercontent.com/nem035/QR-Gen/master/test.txt) file from this repo:
+
+    qr-gen -f test.txt text.png
+    
+Produces:
+
+ ![Sample QR Image](https://raw.githubusercontent.com/nem035/QR-Gen/master/test.png)
