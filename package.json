@@ -1,0 +1,19 @@
+{
+  "name": "qr-gen",
+  "version": "1.0.0",
+  "description": "Simple command line utility to create QR-encoded images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nemanja Stojanovic",
+  "license": "MIT",
+  "dependencies": {
+    "qr-image": "^3.1.0"
+  },
+  "repository" :
+  {
+    "type" : "git", 
+    "url" : ""
+  }
+}
