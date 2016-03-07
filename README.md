@@ -1,6 +1,6 @@
 # QR-gen 
 
-QR-gen is a simple command line utility that creates QR-encoded images.
+QR-gen is a simple command line utility that creates QR-encoded PNG images.
 
 ## Usage
    
