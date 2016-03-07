@@ -1,7 +1,7 @@
 {
   "name": "qr-gen",
-  "version": "1.0.0",
-  "description": "QR-Gen is a simple command line utility that creates QR-encoded PNG images..",
+  "version": "0.1.0",
+  "description": "QR-Gen is a simple command line utility that creates QR-encoded PNG images.",
   "main": "qr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
