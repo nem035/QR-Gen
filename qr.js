@@ -3,11 +3,14 @@
 const qr = require('qr-image');
 const fs = require('fs');
 
-const USAGE_STRING = 
-        'Encoding text:\n' +
-        '\t qr <text> <pathToImage>\n\n' +
-        'Encoding a file:\n' +
-        '\t qr -f <pathToFile> <pathToImage>\n\n';
+const USAGE_STRING = `
+        USAGE:
+        -----------------------------------
+        Encoding text: 
+         \t qr <text> <pathToImage>
+        
+        Encoding a file:
+        \t qr -f <pathToFile> <pathToImage>`;
 
 const [ nodePath, scriptPath, arg1, arg2, arg3 ] = process.argv;
 
@@ -25,10 +28,12 @@ if (stringArgs.length > 1) {
             .then(fileRead)
             .then(content => {
                 createImage(content.toString(), imagePath);
+                console.log(`Created image ${imagePath} from file ${str}`);
             })
             .catch(logError);
     } else {
         createImage(str, imagePath);
+        console.log(`Created image ${imagePath} from text ${str}`);
     }
 } else {
     console.log(USAGE_STRING);
