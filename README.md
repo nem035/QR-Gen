@@ -2,7 +2,15 @@
 
 QR-gen is a simple command line utility that creates QR-encoded PNG images.
 
+## Instalation
+
+    npm install -g https://github.com/nem035/QR-Gen
+
 ## Usage
+   
+   Since `qr.js` uses ES6 features that are still not default in node (as of node 5.7.1), I recommend you add an alias to run `qr.js`:
+   
+   alias "node --harmony_destructuring path_to_qr.js"
    
 - Create an image from a string.
 

@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 const qr = require('qr-image');
 const fs = require('fs');
@@ -24,9 +24,9 @@ if (stringArgs.length > 1) {
         fileAccess(str)
             .then(fileRead)
             .then(content => {
-                console.log(content.toString());
                 createImage(content.toString(), imagePath);
-            });
+            })
+            .catch(logError);
     } else {
         createImage(str, imagePath);
     }
@@ -63,4 +63,8 @@ function fileRead(path) {
             }
         });
     });
+}
+
+function logError(error) {
+    console.log(error);
 }
