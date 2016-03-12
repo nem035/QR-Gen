@@ -10,7 +10,7 @@ QR-gen is a simple command line utility that uses [qr-image](https://github.com/
    
     node --harmony_destructuring path_to_qr.js
     
-   I recommend you create an alias `qr-gen` for the above command.
+   Probably the easiest thing is to create an alias `qr-gen` for the above command.
    
 - Create an image from a string.
 
